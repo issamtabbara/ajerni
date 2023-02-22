@@ -1,0 +1,26 @@
+.Navbar-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .Navbar-Middle-Buttons-Container{
+        button{
+            width: 200px;
+            height: 20px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 8px;
+            text-align: center;
+            color: white;
+            background-color: #DC143C;
+            border: none;
+        }
+        
+    }
+    .Navbar-Buttons-Container{
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
