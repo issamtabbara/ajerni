@@ -1,26 +1,42 @@
 .Navbar-Container{
     display: flex;
+    height: 78px;
     justify-content: space-between;
     align-items: center;
-    .Navbar-Middle-Buttons-Container{
-        button{
-            width: 200px;
-            height: 20px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 11px;
-            line-height: 8px;
-            text-align: center;
+    background: #6495ED;
+    box-shadow: inset -385px 20px 91px -31px rgba(232, 232, 232, 0.23), inset 97px 43px 175px -8px rgba(78, 64, 242, 0.72);
+    .Navbar-Logo{
+        padding-left: 2%;
+        display: flex;
+        align-items: center;
+        p{
             color: white;
-            background-color: #DC143C;
-            border: none;
+            justify-content: center;
+            align-items: center;
+            font-size: 150%;
+            margin-left: 5%;
+            font-family: 'K2D';
+            font-weight: 600;
         }
-        
     }
     .Navbar-Buttons-Container{
-        width: 140px;
         display: flex;
+        width: 30%;
         justify-content: space-between;
+        a{
+            font-family: 'K2D';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
     }
+}
+.Navbar-LowerBorder{
+    margin-top: -5px;
+    background: rgba(100, 149, 237, 0.84);
+    border: 5px solid rgba(124, 171, 255, 0.5);
 }

@@ -1,27 +1,29 @@
-import {ReactComponent as LOGO} from "../../Images/Logo/Logo.svg"
-import {ReactComponent as Cart} from "../../Images/navbar/Cart.svg"
-import {ReactComponent as Noti} from "../../Images/navbar/Noti.svg"
-import {ReactComponent as ProfIcon} from "../../Images/navbar/user.svg"
-import {ReactComponent as Bars} from "../../Images/navbar/3 bars.svg"
+import { Fragment } from "react";
+import { ReactComponent as LOGO } from "../../Images/Logo/LOGO.svg";
+import { ReactComponent as LOGIN } from "../../Images/navbar/LogIn-Btn.svg"
 import "./navbar.styles.scss"
 const Navbar = () => {
     
 
     return (
-        <div className="Navbar-Container">
-            <LOGO width="200px" height="auto"/>
-            <div className="Navbar-Middle-Buttons-Container">
-                <button style={{backgroundColor:'#DC143C'}}>Individual</button>            
-                <button style={{backgroundColor:'#808080'}}>Connect</button>            
-                <button style={{backgroundColor:'#2288AA'}}>COMPLETED RESERVATIONS</button>            
+       <Fragment>
+            <div className="Navbar-Container">
+                <div className="Navbar-Logo">
+                    <LOGO width="27px" height="38px" />
+                    <p>dahherni</p> 
+                </div>
+                <div className="Navbar-Buttons-Container"> 
+                    <a href="">Program</a>    
+                    <a href="">Contact</a>    
+                    <a href="">Partnership</a>    
+                    <a href="">About us</a>    
+                    <a href="">Blog</a>
+                    <LOGIN/>
+                    
+                </div>
             </div>
-            <div className="Navbar-Buttons-Container">
-                <div><Cart/></div>             
-                <div><Noti/></div>             
-                <div><ProfIcon/></div>             
-                <div><Bars/></div>                         
-            </div>
-        </div>  
+            <div className="Navbar-LowerBorder"/>
+       </Fragment>
     );
 }
 
