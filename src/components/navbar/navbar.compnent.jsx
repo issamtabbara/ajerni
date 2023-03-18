@@ -1,10 +1,9 @@
 import { Fragment } from "react";
 import { ReactComponent as LOGO } from "../../Images/Logo/LOGO.svg";
-import { ReactComponent as LOGIN } from "../../Images/navbar/LogIn-Btn.svg"
+import logoutBtn from "../../Images/navbar/LogIn-Btn.svg"
+import Navbarbtn from "../Navbar-Btn/NavBar-Btn.component";
 import "./navbar.styles.scss"
 const Navbar = () => {
-    
-
     return (
        <Fragment>
             <div className="Navbar-Container">
@@ -13,13 +12,12 @@ const Navbar = () => {
                     <p>dahherni</p> 
                 </div>
                 <div className="Navbar-Buttons-Container"> 
-                    <a href="">Program</a>    
-                    <a href="">Contact</a>    
-                    <a href="">Partnership</a>    
-                    <a href="">About us</a>    
-                    <a href="">Blog</a>
-                    <LOGIN/>
-                    
+                    <Navbarbtn>Program</Navbarbtn>
+                    <Navbarbtn>Contact</Navbarbtn>
+                    <Navbarbtn>Partnership</Navbarbtn>
+                    <Navbarbtn>About us</Navbarbtn>
+                    <Navbarbtn>Blog</Navbarbtn>
+                    <Navbarbtn><img src={logoutBtn} alt="Logout"/></Navbarbtn>
                 </div>
             </div>
             <div className="Navbar-LowerBorder"/>
