@@ -22,7 +22,7 @@
     .Navbar-Buttons-Container{
         display: flex;
         width: 35%;
-        height: 100%;
+        height: 88%;
         justify-content: space-between;
     }
 }
@@ -30,4 +30,5 @@
     margin-top: -5px;
     background: rgba(100, 149, 237, 0.84);
     border: 5px solid rgba(124, 171, 255, 0.5);
+    z-index: 6;
 }
