@@ -1,21 +1,19 @@
 .Home-Container{
-    .Slides-Container{
-        width: 100%;
-        height: 90vh;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-    }
-    .Slides{
-        width: 100%;
-        height: 90vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        scroll-snap-align: start;
+    position: relative;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    height: 90vh;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+        display: none;
     }
     .Home-CardContainer{
+        margin-top: 10%;
         height: 100%;
+    
     }
     .Home-Download{
         height: 10%;
@@ -180,6 +178,8 @@
         }
     }
     .Home-CompanyLogo{
+        height: 70%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;

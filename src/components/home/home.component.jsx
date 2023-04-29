@@ -12,12 +12,25 @@ import ReferAndEarn from "../../Images/Home/ReferAndEarn.png";
 import CompanyLogo from "../../Images/Home/CompanyLOGO.png";
 import "./home.styles.scss";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import HomeSection from "../HomeSection/homesection.component";
+import { useRef } from "react";
 
 const Home = () => {
+  const startSection = useRef();
+  const hub = useRef();
+  const traits = useRef();
+  const company = useRef();
+
+  const scrollTo = (section) => {
+    section.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className='Home-Container'>
-      <div className='Slides-Container'>
-        <div className='Slides'>
+      <div ref={startSection}>
+        <HomeSection
+          scrollTo={scrollTo}
+          goToSection={hub}
+        >
           <div className='Home-CardContainer'>
             <div className='Home-Download'>
               <p>Available on Google and IOS</p>
@@ -38,30 +51,13 @@ const Home = () => {
               />
             </div>
           </div>
-        </div>
-        <div className='Slides'>
-          <div className='Home-CardContainer'>
-            <h1>We’re always here for you</h1>
-            <div className='Home-DownloadFrame'>
-              <img
-                src={DownloadFrame}
-                alt='Mobile app'
-              />
-              <div className='DownloadNow'>
-                <p>You can download the app here</p>
-                <img
-                  src={GooglePlayIcon}
-                  alt='Google Play'
-                />
-                <img
-                  src={AppStoreIcon}
-                  alt='App store'
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='Slides'>
+        </HomeSection>
+      </div>
+      <div ref={hub}>
+        <HomeSection
+          scrollTo={scrollTo}
+          goToSection={traits}
+        >
           <div className='Home-CardContainer'>
             <h1>We’re the hub that connects all</h1>
             <div className='Home-CarRentals-Container'>
@@ -128,8 +124,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className='Slides'>
+        </HomeSection>
+      </div>
+      <div ref={traits}>
+        <HomeSection
+          scrollTo={scrollTo}
+          goToSection={company}
+        >
           <div className='Home-CardContainer'>
             <h1>Passivity and longevity</h1>
             <div className='Home-ReferAndEarn'>
@@ -154,8 +155,10 @@ const Home = () => {
               </h1>
             </div>
           </div>
-        </div>
-        <div className='Slides'>
+        </HomeSection>
+      </div>
+      <div ref={company}>
+        <HomeSection IsLast={true}>
           <div className='Home-CardContainer'>
             <div className='Home-CompanyLogo'>
               <img
@@ -164,7 +167,7 @@ const Home = () => {
               ></img>
             </div>
           </div>
-        </div>
+        </HomeSection>
       </div>
     </div>
   );
