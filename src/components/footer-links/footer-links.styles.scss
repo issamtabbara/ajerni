@@ -1,0 +1,20 @@
+.FooterLinks{
+  height: 100%;
+  padding-left: 10%;
+  h1{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.2;
+    color: #131313;
+  }
+  div{
+      padding-top: 25%;
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.2;
+      color: rgba(19, 19, 19, 0.6);
+      text-decoration: none;
+    }
+  }
+}

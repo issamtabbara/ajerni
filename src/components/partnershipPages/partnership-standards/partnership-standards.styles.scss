@@ -1,0 +1,141 @@
+.PartnershipStandards-Container{
+  margin-top: 7%;
+  width: 800px;
+  margin-left: 30%;
+  color: white;
+  font-family: 'K2D';
+  letter-spacing: 0.1em;
+  font-size: 23px;
+  text-align: center;
+  font-weight: 600;
+  
+  .PartnershipStandards-ButtonContainer{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30%;
+  }
+}
+.PartnershipStandards-ModalContainer{
+  margin:2% 10% 0 10%;
+  color: #6065F0;
+  font-family: 'K2D'; 
+  
+  & h1{
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .PartnershipStandards-TermsContainer{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border: 1px solid #a6c9ff;
+    border-radius: 13px;
+    height: 90%;
+    .PartnershipStandards-TermsContainer-Title{
+      margin-top: 5%;
+      margin-left: 8%;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      & p{
+        margin-left: 2%;
+        color: black;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "cocogoose";
+      }
+    }
+    .PartnershipStandards-TermsContainer-Break{
+      border-radius: 2px;
+      height: 1px;
+      width: 80%;
+      margin-left: 10%;
+      background-color: #a6c9ff;
+      
+    }
+    .PartnershipStandards-TermsContainer-Body{
+      margin-top: 2%;
+      margin-bottom: 2%;
+      height: 330px;
+      margin-left: 10%;
+      width: 80%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      font-weight: 400;
+      font-size:12px;
+      p {
+        word-wrap: break-word;
+      }
+      &::-webkit-scrollbar {
+        background: transparent;
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 25px;
+        border: 1px solid #b9d0fa;
+        background: #b9d0fa;
+      }
+    }
+  }
+  .PartnershipStandards-TermsContainer-CheckboxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #f00;
+    & input{
+      display: none;
+    }
+    .PartnershipStandards-TermsContainer-CheckboxContainer-Checkbox{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #b9d0fa;
+      border-radius: 25px;
+      width: 15px;
+      height: 15px;
+      background: transparent;
+      margin-right: 2%;
+      
+      .PartnershipStandards-TermsContainer-CheckboxContainer-CheckboxInner{
+        visibility: hidden;
+        border: 1px solid #b9d0fa;
+        border-radius: 25px;
+        width: 40%;
+        height: 40%;
+        background: white;
+        
+      }
+    }
+    
+    input:hover + .PartnershipStandards-TermsContainer-CheckboxContainer-Checkbox{
+      background: gray;
+    }    
+    input:checked + .PartnershipStandards-TermsContainer-CheckboxContainer-Checkbox{
+      background: #5d63f0;
+    }
+    input:checked + .PartnershipStandards-TermsContainer-CheckboxContainer-Checkbox .PartnershipStandards-TermsContainer-CheckboxContainer-CheckboxInner{
+      visibility: visible;
+    }
+  }
+  .PartnershipStandards-CloseButton{
+    margin-top: 5%;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .PartnershipStandards-ModalContainer-Centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+

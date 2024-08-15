@@ -1,0 +1,23 @@
+.TravacotBtn{
+  margin-top: 10%;
+  margin-left: 2.5%;
+  font-family: "Poppins";
+  font-size: 18px;
+  width: 80%;
+  height: 10%;
+  border-radius: 4px;
+  background-color: #7F93FA;
+  border: none;
+  color: white;
+  transition-duration: 0.05s;
+
+  &:hover{
+    background-color: white;
+    color: #7F93FA;
+  }
+
+  &:disabled{
+    background-color: transparent;
+    color: #808080;
+  }
+}

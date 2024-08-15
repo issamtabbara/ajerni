@@ -1,0 +1,65 @@
+.PartnershipDepartments-Container{
+  color: white;
+  font-family: 'K2D';
+  margin-left: 8vw;
+  margin-Top: 10vh;
+  letter-spacing: 2px;
+  
+  & h1{
+    font-weight: normal;
+    font-size: 1.5vw;
+  }
+  .PartnershipDepartments-Container-ButtonsContainer{
+    display: grid;
+    margin-top: 9vh;
+    grid-template-columns: 25vw auto;
+    row-gap: 8vh;
+    
+    .PartnershipDepartments-CheckboxContainer{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.1vw;
+      user-select: none;
+      width: 13vw;
+      input {
+        display: none;
+      }
+      
+      .PartnershipDepartments-CheckboxContainer-Checkbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.2vw;
+        height: 2.4vh;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 50%;
+        position: relative;
+        margin-right: 0.7vw;
+        transition: background-color 0.2s, border-color 0.2s;
+        .PartnershipDepartments-CheckboxContainer-CheckboxInner{
+          visibility: hidden;
+          border: 1px solid #b9d0fa;
+          border-radius: 25px;
+          width: 40%;
+          height: 40%;
+          background: white;
+        }
+      }
+      input:checked + .PartnershipDepartments-CheckboxContainer-Checkbox {
+        background: #5d63f0;
+        &::after {
+          opacity: 1;
+        }
+      }
+      input:hover + .PartnershipDepartments-CheckboxContainer-Checkbox {
+        background-color: gray;
+      }
+      input:checked + .PartnershipDepartments-CheckboxContainer-Checkbox .PartnershipDepartments-CheckboxContainer-CheckboxInner {
+        visibility: visible;
+      }
+    }
+  }
+}
+

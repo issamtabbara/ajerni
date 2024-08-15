@@ -1,0 +1,457 @@
+.Program-Container{
+    position: relative;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    //scroll-snap-type: y mandatory;
+    height: 92.6vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .Program-CardContainer{
+        height: 100%;
+        width: 100%;
+    }
+   .ProgramSectionOne{
+       width: 100%;
+       height: 100%;
+       .ProgramSectionOne-ImageOne{
+           position: absolute;
+           width: 16.14%;
+           height: 39.5%;
+           top: 60.5%;
+           background: url("../../Images/Program/placeholderBGSectionOneProgram.png");
+           background-size: contain;
+           background-repeat: no-repeat;
+           z-index: -1;
+       }
+       .ProgramSectionOne-ImageTwo{
+           position: absolute;
+           width: 11.92%;
+           height: 29.16%;
+           left: 11.82%;
+           top: 12.96%;
+           filter: blur(5px);
+           background: url("../../Images/Program/placeholderBGSectionOneProgram.png");
+           background-size: contain;
+           background-repeat: no-repeat;
+           z-index: -1;
+       }
+       .ProgramSectionOne-ImageThree{
+           position: absolute;
+           width: 16.14%;
+           height: 39.5%;
+           left: 43.22%;
+           top: 34.35%;
+           background: url("../../Images/Program/placeholderBGSectionOneProgram.png");
+           background-size: contain;
+           background-repeat: no-repeat;
+           z-index: -1;
+       }
+       .ProgramSectionOne-ImageFour{
+           position: absolute;
+           width: 12.18%;
+           height: 30%;
+           left: 53.28%;
+           top: 66.11%;
+           filter: blur(10px);
+           background: url("../../Images/Program/placeholderBGSectionOneProgram.png");
+           background-size: contain;
+           background-repeat: no-repeat;
+           z-index: -1;
+       }
+       .ProgramSectionOne-ImageFive{
+           position: absolute;
+           width: 14.84%;
+           height: 36.57%;
+           left: 83.02%;
+           top: 61.29%;
+           filter: blur(10px);
+           background: url("../../Images/Program/placeholderBGSectionOneProgram.png");
+           background-size: contain;
+           background-repeat: no-repeat;
+           z-index: -1;
+       }
+       .ProgramSectionOne-ImageSix{
+           position: absolute;
+           width: 19.06%;
+           height: 46.94%;
+           left: 80.93%;
+           top: 7.22%;
+           filter: blur(10px);
+           background: url("../../Images/Program/placeholderBGSectionOneProgram.png");
+           background-size: contain;
+           background-repeat: no-repeat;
+           z-index: -1;
+       }
+       .ProgramSectionOne-Background{
+           width: 100%;
+           height: 100%;
+           background-color: rgba(80, 73, 161, 0.8);
+           opacity: 100%;
+           .ProgramSectionOne-Content{
+               padding-top: 10%;
+               margin-left:15% ;
+               width: 34.27%;
+               height: 100%;
+               z-index: 2;
+               .ProgramSectionOne-Content-Text {
+                   width: 100%;
+                   height: 30%;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   
+                   .ProgramSectionOne-Content-TextLine{
+                       margin-top: 1%;
+                       border-radius:5px;
+                       height: 100%;
+                       width:1%;
+                       background-color: white;
+                   }
+                   .ProgramSectionOne-Content-TextContent{
+                       margin-left: 2%;
+                       width: 100%;
+                       height:100%;
+                       color: white;
+                       & h1{
+                           font-size: 30px;
+                           font-weight: bold;
+                           letter-spacing: 3px;
+                           margin-bottom: 5%;
+                       }
+                       & h2{
+                           margin-top: 5%;
+                           width: 70%;
+                           font-size: 15px;
+                           font-weight: 400;
+                           letter-spacing: 1px; 
+                       }
+                          & p{
+                              width: 80%;
+                              margin-top: 5%;
+                              font-size: 15px;
+                              font-weight: 200;
+                            letter-spacing: 1px;
+                          }
+                   }
+               }
+           }
+               .ProgramSectionOne-Arrow{
+                   position: absolute;
+                   left: 19%;
+                   top: 0;
+                   width: 100%;
+                   height: 100%;
+                   background: url("../../Images/Program/Arrow.png");
+                   background-size: contain;
+                   background-repeat: no-repeat;
+                   z-index: 1;
+               }
+       }
+   }
+    .ProgramSectionTwo{
+        height: 100%;
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 5%;
+        .ProgramSectionTwo-partner-benefits{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: start;
+            .ProgramSectionTwo-benefits-Message{
+                width: 42%;
+                height: 100%;
+                padding-top: 7%;
+               margin-bottom: 10%;
+                h1 {
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+                h2 {
+                    margin-top: 3%;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                
+                p {
+                    width:63%;
+                    margin-top: 5%;
+                    font-size: 15px;
+                }
+                .ProgramSectionTwo-become-partner-button{
+                    background-color: #7F93FA;
+                    border-radius: 4px;
+                    width: 63%;
+                    height: 7%;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: bold;
+                    border: none;
+                    &:hover{
+                        border: 2px solid #7F93FA;
+                        background-color: white;
+                        color: #7F93FA;
+                    }
+                }
+            }
+            .ProgramSectionTwo-benefits-Table{
+                width: 46.14%;
+                height: 75%;
+                .ProgramSectionTwo-benefits-Table-Title{
+                    display: flex;
+                    background-color:#4D4890;
+                    width: 100%;
+                    height: 10%;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        text-align: center;
+                        width: 100%;
+                        height: 40%;
+                        font-size: 25px;
+                        color: white;
+                        font-weight: 500;
+                    }
+                }
+                .ProgramSectionTwo-benefits-table-Row{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 0.5%;
+                    height:10%;
+                    width: 100%;
+                    .ProgramSectionTwo-benefits-table-Left{
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-weight: 300;
+                        font-size: 17px;
+                        width: 49.75%;
+                        background-color:#909BD6;
+                    }
+                    .ProgramSectionTwo-benefits-table-Right{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size:  25px;
+                        color: white;
+                        height: 100%;
+                        width: 49.75%;
+                        background-color:#90D69F;
+                    }
+                }
+            }
+        }
+        
+    }
+    .ProgramSectionThree{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding-left: 10%;
+        .ProgramSectionThree-Content{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            height: 100%;
+            .ProgramSectionThree-Content-Message{
+                width: 40%;
+                height: 60%;
+                .ProgramSectionThree-Content-Message-Title{
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    height: 20%;
+                    .ProgramSectionThree-Content-Message-Title-Meter{
+                        background-image: url("../../Images/Program/Meter.png");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        margin-top: 2%;
+                        width: 10%;
+                        height: 95%;
+                    }
+                    h1 {
+                        font-weight: bold;
+                        margin-left: 2%;
+                        font-size: 35px;
+                    }
+                }
+                .ProgramSectionThree-Content-Message-Text{
+                    height: 40%;
+                    margin-top: 4%;
+                    h2{
+                        width: 90%;
+                        height: 50%;
+                        font-size: 17px;
+
+                    }
+                    p{
+                        margin-top: 4%;
+                        width: 90%;
+                        height: 50%;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .ProgramSectionThree-Content-Profitability{
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+    .ProgramSectionFour{
+        width: 100%;
+        height: 100%;
+        padding-left: 10%;
+        background-color: white;
+        h1 {
+            width: 100%;
+            height: 3.7%;
+            padding-top: 4%;
+            font-weight: bold;
+            font-size: 30px;
+            color: #202020;
+        }
+        .ProgramSectionFour-Content{
+            height: 80%;
+            width: 100%;
+            padding-top: 7%;
+            padding-left: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .ProgramSectionFour-Content-Logos{
+                height: 100%;
+                width: 35%;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: auto;
+            }
+            .ProgramSectionFour-Content-Text{
+                height: 100%;
+                width: 100%;
+                padding-right: 22%;
+                padding-top: 1%;
+                padding-left: 5%;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: auto;
+                color: #5A5A5A;
+                font-size: 15.5px;
+
+            }
+        }
+        
+    }
+    .ProgramSectionFive{
+        width: 100%;
+        height: 100%;
+        padding-left: 10%;
+        padding-top: 3.5%;
+        background-color: white;
+        .ProgramSectionFive-Title{
+            h1{
+                color: black;
+                font-size: 28px;
+                font-weight: bold;
+            }
+        }
+        .ProgramSectionFive-Middle{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 70%;
+        }
+        .ProgramSectionFive-Bottom{
+            p {
+                width: 70%;
+                text-align: right;
+                color: #8A8A8A;
+                font-size: 25px;
+                font-weight : 600;
+                letter-spacing: 0.2em;
+            }
+        }
+    }
+    .ProgramSectionSix{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 100%;
+        .ProgramSectionSix-Chidler{
+            height: 10%;
+            width: 10%;
+            p{
+                font-family: K2D;
+                color: #EF5F5F;
+                letter-spacing: 1.11em;
+                font-size: 35px;
+                font-weight: bold;
+            }
+        }
+        .ProgramSectionSix-X{
+            height: 3%;
+            width: 10%;
+            .ProgramSectionSix-X-Left{
+                position: relative;
+                width: 100%;
+                left: 50%;
+                top: 100%;
+                transform: rotate(45deg);
+                height: 10%;
+                background-color: #7b73f8;
+            }
+            .ProgramSectionSix-X-Right{
+                position: relative;
+                height: 10%;
+                width: 100%;
+                transform: rotate(-45deg);
+                left: 50%;
+                top: 100%;
+                background-color: #7b73f8;
+            }
+        }
+        .ProgramSectionSix-Travacot{
+            margin-top: 1%;
+            margin-left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15%;
+            height: 10%;
+            img{
+                width: 22%;
+                height: 100%;
+                background-color:#484554;
+            }
+            div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #7b73f8;
+                    height: 100%;
+                    width: 80%;
+                p{
+                    margin-top: 8%;
+                    height: 92%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: cocogoose;
+                    font-weight: bold;
+                    color: white;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

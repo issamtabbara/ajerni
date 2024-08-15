@@ -1,0 +1,86 @@
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+.PartnershipAboutYou-Container {
+  color: white;
+  font-family: 'K2D';
+  margin-left: 8%;
+  margin-Top: 4%;
+  letter-spacing: 4px;
+
+  & h1 {
+    font-weight: normal;
+    font-size: 2vw;
+  }
+
+  .PartnershipAboutYou-Container-FormTitle {
+    margin-top: 2%;
+
+    & p {
+      font-size: 1.5vw;
+      font-weight: normal;
+    }
+  }
+
+  .PartnershipAboutYou-Container-FormInput {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .PartnershipAboutYou-Container-FormInput-ButtonGroup {
+      margin-top: 2%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 40%;
+      .PartnershipAboutYou-Container-FormInput-button {
+        background-color: transparent;
+        color: white;
+        font-family: 'K2D';
+        font-size: 1vw;
+        width: 20vw;
+        height: 6vh;
+        border: 1px solid;
+        border-radius: 30px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: white;
+          color: #6495ED;
+          border-color: #6495ED;
+        }
+      }
+    }
+    .PartnershipAboutYou-Container-FormInput-InputGroup{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 40%;
+        & input::placeholder{
+          color: white;
+          letter-spacing: 4px;
+          font-weight: normal;
+          font-style: italic;
+        }
+      .PartnershipAboutYou-Container-FormInput-Input{
+        background-color: transparent;
+        color: white;
+        font-family: 'K2D';
+        font-size: 1vw;
+        width: 20vw;
+        height: 6vh;
+        border: 1px solid;
+        border-radius: 30px;
+        padding-left: 2%;
+      }
+      
+      .PartnershipAboutYou-Container-FormInput-Select{
+        width: 20vw;
+        height: 6vh;
+        border: 1px solid;
+        border-radius: 30px;
+      }
+    }
+  }
+}

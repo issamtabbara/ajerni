@@ -1,22 +1,32 @@
-.Navbar-Container{
+.Navbar-Container-Normal{
     display: flex;
-    height: 78px;
+    height:7vh;
     justify-content: space-between;
     align-items: center;
-    background: #6495ED;
-    box-shadow: inset -385px 20px 91px -31px rgba(232, 232, 232, 0.23), inset 97px 43px 175px -8px rgba(78, 64, 242, 0.72);
+    background: white;
+    transition: 1s;
     .Navbar-Logo{
         padding-left: 2%;
         display: flex;
+        justify-content: center;
         align-items: center;
+        text-decoration: none;
+        
+        .Navbar-Logo-Container{
+            width: 27px;
+            height: 38px;
+            background-image: url("../../Images/Logo/logo-two.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         p{
-            color: white;
             justify-content: center;
             align-items: center;
-            font-size: 150%;
-            margin-left: 5%;
-            font-family: 'K2D';
+            font-size: 120%;
+            margin:5px 0px 0px 10px;
+            font-family: 'cocogoose';
             font-weight: 600;
+            color: #7B73F8;
         }
     }
     .Navbar-Buttons-Container{
@@ -24,11 +34,45 @@
         width: 35%;
         height: 88%;
         justify-content: space-between;
+        
     }
 }
-.Navbar-LowerBorder{
-    margin-top: -5px;
-    background: rgba(100, 149, 237, 0.84);
-    border: 5px solid rgba(124, 171, 255, 0.5);
-    z-index: 6;
+.Navbar-Container-Alt{
+    display: flex;
+    height:7vh;
+    justify-content: space-between;
+    align-items: center;
+    background: #565656;
+    transition: 0.5s;
+    .Navbar-Logo{
+        padding-left: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        .Navbar-Logo-Container{
+            width: 27px;
+            height: 38px;
+            background-image: url("../../Images/Logo/logo-one.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        p{
+            justify-content: center;
+            align-items: center;
+            font-size: 120%;
+            margin:5px 0px 0px 10px;
+            font-family: 'cocogoose';
+            font-weight: 600;
+            color: white;
+        }
+    }
+    .Navbar-Buttons-Container{
+        display: flex;
+        width: 35%;
+        height: 88%;
+        justify-content: space-between;
+
+    }
 }

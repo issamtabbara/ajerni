@@ -1,0 +1,38 @@
+.ProgressSteps-MainContainer{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px;
+  .ProgressSteps-MainContainer-StepsContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    position: relative;
+    .ProgressSteps-MainContainer-StepWrapper{
+        position: relative;
+        z-index: 1;
+      .ProgressSteps-MainContainer-StepStyle-NotComplete{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #000;
+        border: 3px solid #22385C;
+        transition: 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ProgressSteps-MainContainer-StepStyle-Complete{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #585EF1;
+        border: 3px solid #BDD5FF;
+        transition: 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

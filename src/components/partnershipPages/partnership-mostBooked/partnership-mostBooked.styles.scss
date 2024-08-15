@@ -1,0 +1,20 @@
+.PartnershipMostBooked-Container{
+  margin-top: 5%;
+  margin-left: 5%;
+  color: white;
+  font-weight: 600;
+  font-family: "K2D";
+  & h1{
+    margin-top: 10%;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+  }
+
+  .PartnershipMostBooked-OptionsContainer{
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30%;
+    margin-top: 3%;
+  }
+}

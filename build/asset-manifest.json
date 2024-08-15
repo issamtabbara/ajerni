@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.34de3d58.css",
+    "main.js": "/static/js/main.09d781eb.js",
+    "static/js/787.78dfe75f.chunk.js": "/static/js/787.78dfe75f.chunk.js",
+    "static/media/bubbles.png": "/static/media/bubbles.9ab4a571bd423fe17d99.png",
+    "static/media/BubbleSection6.png": "/static/media/BubbleSection6.21ab1305bc81ff4d6d97.png",
+    "static/media/cocogoose-pro.regular.ttf": "/static/media/cocogoose-pro.regular.6731ef40f4416b5c9069.ttf",
+    "static/media/Travalytics.png": "/static/media/Travalytics.b2e2cf97a4f45b26f9d4.png",
+    "static/media/dahherniLogoProfit.png": "/static/media/dahherniLogoProfit.3504e520f8f7424e8120.png",
+    "index.html": "/index.html",
+    "main.34de3d58.css.map": "/static/css/main.34de3d58.css.map",
+    "main.09d781eb.js.map": "/static/js/main.09d781eb.js.map",
+    "787.78dfe75f.chunk.js.map": "/static/js/787.78dfe75f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34de3d58.css",
+    "static/js/main.09d781eb.js"
+  ]
+}

@@ -1,0 +1,46 @@
+.CountrySelect-Container{
+  z-index: 10000;
+  width: 300px;
+  position: relative;
+  .CountrySelect-Container-btn{
+    cursor: pointer;
+    width: 20vw;
+    height: 6vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #B9D0FA;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #585ef1;
+    font-family: 'K2D';
+  }
+    & div::-webkit-scrollbar {
+    width: 0;
+    }
+  .CountrySelect-Container-Content{
+    position: absolute;
+    left: 3%;
+    width: 19vw;
+    height: 30vh;
+    background: white;
+    border: 1px solid #B9D0FA;
+    border-radius: 15px;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.07);
+    color: #585EF1;
+    
+    .CountrySelect-Container-Content-Item{
+      padding: 10px;
+      cursor: pointer;
+      &:hover{
+        background: #fcfcfc;      
+      }
+    }
+  }
+  
+}

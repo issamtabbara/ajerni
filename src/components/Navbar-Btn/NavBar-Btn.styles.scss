@@ -1,6 +1,26 @@
-.Navbarbtn-Container{
+.Navbarbtn-Container-Normal{
     display: flex;
-    font-family: 'K2D';
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #7B73F8;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    transition:  0.5s;
+    &:hover{
+        opacity: 60%;
+    }
+}
+.Navbarbtn-Container-Alt{
+    display: flex;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 100%;
@@ -12,18 +32,9 @@
     justify-content: center;
     align-items: center;
     border: none;
-    background-color: #6273EF;
+    background-color: transparent;
+    transition:  0.5s;
     &:hover{
-        animation: BackgroundColorChangeHover 0.5s forwards;
-    }
-    @keyframes BackgroundColorChangeHover {
-        0%{
-            background-color: #6273EF;
-            color: white;
-        }
-        100%{
-            background-color: white;
-            color: #6273EF;
-        }
+        opacity: 60%;
     }
 }

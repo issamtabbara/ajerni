@@ -1,0 +1,17 @@
+.UnderConstruction-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #5B73EF; 
+    color: white;
+    font-family:"Poppins";
+    & h1{
+        font-size: 6vw;
+        font-weight: bold;
+    }
+    & p{
+        font-size: 3vw;
+        text-align: center;
+    }
+}
